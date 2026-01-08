@@ -1,0 +1,36 @@
+# Java
+*.class
+frontend/bin/
+out/
+
+# C/C++
+*.exe
+*.o
+*.obj
+*.a
+*.lib
+vm/evm
+vm/evm.exe
+build/
+
+# Rust
+target/
+cli/target/
+
+# Node.js
+node_modules/
+lsp/node_modules/
+dist/
+
+# Python
+__pycache__/
+*.pyc
+
+# IDEs
+.vscode/
+.idea/
+
+# Temp files
+temp.epsilon
+program.evm
+diag_*.epsilon

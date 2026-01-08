@@ -1,0 +1,23 @@
+// benchmark.epsilon
+// Native function 'clock' is required in the VM
+
+var start = clock();
+print "Start time:";
+print start;
+
+var sum = 0;
+var i = 0;
+while (i < 100000) {
+    sum = sum + i;
+    i = i + 1;
+}
+
+var end = clock();
+print "End time:";
+print end;
+
+print "Total Duration (sec):";
+print end - start;
+
+print "Sum:";
+print sum;

@@ -1,0 +1,11 @@
+// recursive_fib.epsilon
+// Demonstrates function recursion and stack frame management
+
+fn fib(n) {
+    if (n <= 1) return n;
+    return fib(n - 1) + fib(n - 2);
+}
+
+var result = fib(7);
+print "Fibonacci of 7 is:";
+print result;

@@ -1,0 +1,18 @@
+// gc_stress.epsilon
+// Tests the Mark-Sweep Garbage Collector by allocating many strings
+
+var i = 0;
+var limit = 5000;
+
+print "Starting GC Stress Test...";
+
+while (i < limit) {
+    var s = "This is a long temporary string that should be collected eventually " + i;
+    if (i % 1000 == 0) {
+        print "Iterations: ";
+        print i;
+    }
+    i = i + 1;
+}
+
+print "GC Stress Test Completed Successfully.";
